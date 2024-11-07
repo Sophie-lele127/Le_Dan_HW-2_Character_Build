@@ -5,7 +5,7 @@
 ### Harry Potter Build For Fall 2024
 
 _Discover Your Hogwarts Wizards!_
-![Logo of Harry Potter](images/logo)
+![Logo of Harry Potter](images/logo.png) <br>
 "In a world hidden from the eyes of Muggles, where magic breathes
 life into ancient castles and whispers fill enchanted forests, there
 are heroes whose stories have captured our hearts for generations.
@@ -27,7 +27,7 @@ universe, you’ll meet wizards who dared to stand up for what was
 right, who fought against all odds, and who showed that true power
 lies not just in magic, but in love and sacrifice. So step forward,
 for your own adventure at Hogwarts awaits..."
-![Overall Picture](images/sprites)
+![Overall Picture](images/HarryPotterSprites.png)
 Hover over or click on each character to uncover their unique
 journey and magical legacy at Hogwarts!
 
