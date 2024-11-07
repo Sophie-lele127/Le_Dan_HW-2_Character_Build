@@ -1,4 +1,4 @@
-# NgocDan_Le_HW2_Character_Build
+# NgocDan_Le_Character_build
 
 ## Harry Potter
 
