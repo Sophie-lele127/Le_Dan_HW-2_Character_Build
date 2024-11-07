@@ -6,7 +6,7 @@
 
 **Discover Your Hogwarts Wizards!**
 
-![Harry Potter Logo](images/logo.png)
+![Harry Potter Logo](images/logo.png) <br>
 
 ---
 
