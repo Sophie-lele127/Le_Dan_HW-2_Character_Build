@@ -1,10 +1,11 @@
 # NgocDan_Le_HW-2_Character_Build
 
-##HW2 - Character Build (CSS Selection and Styles)
+## HW2 - Character Build (CSS Selection and Styles)
 
 ### Harry Potter Build For Fall 2024
 
-_Discover Your Hogwarts Wizards!_
+**Discover Your Hogwarts Wizards!**
+
 ![Logo of Harry Potter](images/logo.png)
 "In a world hidden from the eyes of Muggles, where magic breathes
 life into ancient castles and whispers fill enchanted forests, there
