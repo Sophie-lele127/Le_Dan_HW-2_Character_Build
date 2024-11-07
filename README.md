@@ -1,3 +1,5 @@
+HW2 - Character Build (CSS Selection and Styles)
+=======
 
 # NgocDan_Le_HW-2_Character_Build
 
@@ -94,3 +96,4 @@ Known for his strict demeanor and sharp intelligence, Snape's true motivations r
 Lord Voldemort, born as Tom Riddle, is the main antagonist of the series. Known for his dark ambition and quest for immortality, he is feared throughout the wizarding world and is the one responsible for the death of Harry's parents.
 
 Voldemort embodies the darkest side of ambition, stopping at nothing to achieve power. His influence and actions serve as a constant threat to Hogwarts and the wizarding world, ultimately leading to a final showdown with Harry Potter.
+
