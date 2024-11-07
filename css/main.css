@@ -10,13 +10,17 @@ body {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #000000; /* Set background to black */
-  color: white;
+  background-color: rgb(10, 10, 10);
+  color: rgb(245, 245, 245); /* Off-white text for readability */
 }
 
 /* Main Header rules */
 header {
-  background-color: #1a1a1a; /* Darker gray to contrast with black */
+  background-color: rgb(
+    26,
+    26,
+    26
+  ); /* Darker gray to contrast with background */
   padding: 10px 0px;
 }
 
@@ -28,8 +32,8 @@ header {
 
 /* Characters */
 #character_nav {
-  background-color: #1a1a1a; /* Dark gray to contrast */
-  background-image: url("../images/background-2.jpg"); /* Optional background image */
+  background-color: rgb(26, 26, 26); /* Dark gray to contrast */
+  background-image: url("../images/background-1.jpg"); /* Optional background image */
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: multiply;
@@ -46,26 +50,28 @@ header {
 .characters li {
   height: 220px;
   margin: 10px 8px;
-  background-color: #000000; /* Black background for character boxes */
+  background-color: rgb(15, 15, 15); /* Very dark gray for character boxes */
   text-align: left;
   cursor: pointer;
-  /*Transition*/
-  transition: box-shadow 0.2s ease;
-  box-shadow: 0 155px 0 0 rgb(204, 82, 0) inset; /* Gryffindor-red shadow */
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 155px 0 0 rgb(255, 223, 128) inset;
 }
 
 .characters li h5 {
-  color: white;
+  color: rgb(245, 245, 245); /* Off-white for readability */
   padding: 12px 8px;
 }
 
 .characters li a {
   text-decoration: none;
 }
+
 .characters li:hover {
-  box-shadow: 0 220px 0 0 rgb(204, 82, 0) inset;
+  box-shadow: 0 220px 0 0 rgb(245, 245, 245) inset;
+  transform: scale(1.05); /* Slightly increase size on hover */
 }
 
+/* Instructions */
 article,
 #instructions {
   padding: 20px;
@@ -92,37 +98,62 @@ article p,
   width: 150px;
   height: 150px;
   background-image: url("../images/HarryPotterSprites.png"); /* Path to the uploaded sprite image */
-  background-size: 600px 300px; /* Adjust based on the dimensions of the provided sprite image */
+  background-size: 900px 300px; /* Adjusted to match the actual dimensions of the sprite image */
 }
 
 /* Positioning for each character */
 #harry {
-  background-position: 0px 0px; /* Position for Harry */
+  background-position: 0px 0px; /* Position for Harry (top-left) */
+}
+
+#ron {
+  background-position: -150px 0px; /* Position for Ron */
+}
+
+#hermione {
+  background-position: -300px 0px; /* Position for Hermione */
 }
 
 #draco {
-  background-position: -150px 0px; /* Position for Draco */
+  background-position: -450px 0px; /* Position for Draco */
 }
 
-#luna {
-  background-position: -300px 0px; /* Position for Luna */
+#snape {
+  background-position: -600px 0px; /* Position for Snape */
 }
 
-#cedric {
-  background-position: -450px 0px; /* Position for Cedric */
+#voldemort {
+  background-position: -750px 0px; /* Position for Voldemort */
 }
 
-/* Hover effect to show grayscale version */
-#harry:hover,
-#draco:hover,
-#luna:hover,
-#cedric:hover {
-  background-position-y: -150px; /* Shift to grayscale images in the second row */
+/* Hover effect to show grayscale version (second row) */
+#harry:hover {
+  background-position: 0px -150px; /* Grayscale Harry */
+}
+
+#ron:hover {
+  background-position: -150px -150px; /* Grayscale Ron */
+}
+
+#hermione:hover {
+  background-position: -300px -150px; /* Grayscale Hermione */
+}
+
+#draco:hover {
+  background-position: -450px -150px; /* Grayscale Draco */
+}
+
+#snape:hover {
+  background-position: -600px -150px; /* Grayscale Snape */
+}
+
+#voldemort:hover {
+  background-position: -750px -150px; /* Grayscale Voldemort */
 }
 
 /* Footer rules */
 footer {
-  color: white;
+  color: rgb(245, 245, 245); /* Off-white for readability */
   padding: 20px 0px;
   text-align: center;
 }
@@ -131,7 +162,7 @@ footer {
   position: sticky;
   top: 100%;
   height: 80px;
-  background-color: #1a1a1a; /* Dark gray to match the header */
+  background-color: rgb(26, 26, 26); /* Dark gray to match the header */
 }
 
 /* Lightbox */
@@ -145,7 +176,7 @@ footer {
     0,
     0,
     0,
-    0.95
+    0.8
   ); /* Black background with slight transparency */
   background-repeat: no-repeat;
   background-size: 55vh;
@@ -154,27 +185,35 @@ footer {
   display: none;
 }
 
-#lightbox_gryffindor {
-  background-image: url(../images/Harry.png); /* Gryffindor themed background */
+#lightbox_harry {
+  background-image: url("../images/Harry_LB.png"); /* Background for Harry's lightbox */
 }
 
-#lightbox_hufflepuff {
-  background-image: url(../images/Cedric.png); /* Hufflepuff themed background */
+#lightbox_ron {
+  background-image: url("../images/Ron_LB.png"); /* Background for Ron's lightbox */
 }
 
-#lightbox_ravenclaw {
-  background-image: url(../images/Luna.png); /* Ravenclaw themed background */
+#lightbox_draco {
+  background-image: url("../images/Draco_LB.png"); /* Background for Draco's lightbox */
 }
 
-#lightbox_slytherin {
-  background-image: url(../images/Draco.png); /* Slytherin themed background */
+#lightbox_hermione {
+  background-image: url("../images/Hermione_LB.png"); /* Background for Hermione's lightbox */
+}
+
+#lightbox_snape {
+  background-image: url("../images/Snape_LB.png"); /* Background for Snape's lightbox */
+}
+
+#lightbox_voldemort {
+  background-image: url("../images/Voldemort_LB.png"); /* Background for Voldemort's lightbox */
 }
 
 .lightbox_close {
   position: relative;
   top: 20px;
   left: 90%;
-  color: white;
+  color: rgb(245, 245, 245); /* Off-white */
   font-size: 48px;
   text-decoration: none;
   font-weight: bolder;
@@ -182,7 +221,7 @@ footer {
 
 .lightbox_close:hover {
   opacity: 0.5;
-  color: rgb(217, 0, 255);
+  color: rgb(153, 101, 21); /* Light blue on hover for contrast */
 }
 
 .lightbox article {
